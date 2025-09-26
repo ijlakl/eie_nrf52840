@@ -49,3 +49,19 @@
    - Common arguments:
      (no args)             → Fetch from default remote
      origin <branch_name>  → Fetch a specific branch from remote
+
+9. git add
+   - Put changes into the staging area.
+   - Examples: git add <file>  |  git add .
+
+10. git status
+    - Show staged vs unstaged changes and branch info.
+
+11. git log
+    - Show commit history. Use q to quit.
+
+Note on git push -u <remote> <branch>:
+ - -u sets upstream so future pushes can use just: git push
+
+12. git diff
+    - Show what changed in files that are not staged or between commits.
