@@ -1,0 +1,51 @@
+1. git commit
+   - Saves staged changes to the local repository.
+   - Common arguments:
+     -m "message"   → Add a commit message
+     -a             → Automatically stage tracked files before committing
+   - Notes: Without -m, Git will open a text editor to write the commit message.
+
+2. git branch
+   - Lists, creates, or deletes branches.
+   - Common arguments:
+     (no args)      → List all branches
+     <branch_name>  → Create a new branch
+     -d <branch>    → Delete a branch
+   - Notes: Behavior changes based on arguments. With no args, it lists branches. With a name, it creates a branch.
+
+3. git checkout
+   - Switch branches or restore files.
+   - Common arguments:
+     <branch_name>  → Switch to an existing branch
+     -b <branch>    → Create and switch to a new branch
+   - Notes: Function changes depending on args. With just a branch name, it switches. With -b, it creates and switches.
+
+4. git pull
+   - Fetches and merges changes from a remote repository into the current branch.
+   - Common arguments:
+     (no args)             → Pull from the default remote and branch
+     origin <branch_name>  → Pull from a specific remote branch
+
+5. git push
+   - Uploads local commits to a remote repository.
+   - Common arguments:
+     (no args)             → Push to the default remote and branch
+     origin <branch_name>  → Push to a specific remote branch
+     -u origin <branch>    → Set upstream tracking for the branch
+
+6. git merge
+   - Combines changes from another branch into the current branch.
+   - Common arguments:
+     <branch_name>  → Merge the named branch into the current one
+
+7. git rebase
+   - Reapplies commits on top of another branch or commit, creating a cleaner history.
+   - Common arguments:
+     <branch_name>  → Rebase current branch onto the specified branch
+     -i <commit>    → Interactive rebase starting from a commit (reorder, squash, edit)
+
+8. git fetch
+   - Downloads commits, branches, and tags from a remote repository without merging.
+   - Common arguments:
+     (no args)             → Fetch from default remote
+     origin <branch_name>  → Fetch a specific branch from remote
